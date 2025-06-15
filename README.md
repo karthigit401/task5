@@ -42,26 +42,7 @@ A bar chart of population by country for a selected year, or
 
 A histogram of population values to understand distribution.
 
-🚀 How to Run
-Clone the repo:
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/Task-01-Population-Chart.git
-cd Task-01-Population-Chart
-Install dependencies:
-
-nginx
-Copy
-Edit
-pip install pandas matplotlib seaborn
-Run the notebook:
-
-nginx
-Copy
-Edit
-jupyter notebook population_distribution.ipynb
 ✅ Status
 Project Completed ✅
 
