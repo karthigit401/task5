@@ -1,15 +1,21 @@
-Task-01: Population Distribution Visualization
-This project visualizes the distribution of a population variable using a bar chart or histogram. The dataset used is from the World Bank, specifically the total population indicator.
+Task-05: Traffic Accident Data Analysis – US Accident Dataset
+This project analyzes U.S. traffic accident data to identify patterns based on road conditions, weather, and time of day. The goal is to uncover contributing factors and visualize accident hotspots for better understanding and decision-making.
 
 📊 Objective
-To create a simple data visualization that helps in understanding how population values are distributed across countries or over time.
+To perform exploratory data analysis on a large traffic accident dataset and create meaningful visualizations that highlight when and where accidents are most likely to occur, and under what conditions.
 
 🔍 Dataset
-Source: World Bank - Total Population
+Source: Kaggle – US Accident EDA
 
-Type: Time-series, country-wise population data
+Original Dataset: US Accidents (March 2023)
 
-Format: CSV
+File: US_Accidents_March23.csv
+
+Size: ~3.5 GB
+
+Records: ~7 million accident reports across the U.S.
+
+Dataset Link: https://www.dropbox.com/scl/fi/ymzos99b2rv9io8aja5w9/US_Accidents_March23.csv?rlkey=g2qtwbxbtfj0m4u23o61heikd&st=kkiaaqd3&dl=0
 
 🛠️ Tools Used
 Python
@@ -18,34 +24,54 @@ Pandas
 
 Matplotlib / Seaborn
 
+Plotly
+
+Folium (for map visualization)
+
 Jupyter Notebook
 
 📁 Folder Structure
-bash
-Copy
-Edit
-Task-01/
+
+Task-05/
 │
 ├── data/
-│   └── world_population.csv   # Raw dataset
+│   └── US_Accidents_March23.csv       # Original dataset
 │
-├── population_distribution.ipynb  # Main Jupyter Notebook
+├── us_accidents_analysis.ipynb       # Main Jupyter Notebook
 │
 ├── output/
-│   └── population_chart.png   # Saved chart/image
+│   ├── charts/                        # Time-based and condition-based charts
+│   └── heatmap.html                   # Interactive accident hotspot map
 │
-└── README.md                  # This file
-📈 Sample Output
-The chart displays either:
+└── README.md                          # This file
+🔧 Steps Performed
+Data Cleaning:
 
-A bar chart of population by country for a selected year, or
+Removed missing and duplicate values
 
-A histogram of population values to understand distribution.
+Filtered relevant columns (Time, Weather, Road Conditions, Location)
 
+Analysis Performed:
+
+Accidents by time of day (hourly trends)
+
+Day-wise and month-wise accident frequency
+
+Effect of weather conditions (rain, fog, visibility)
+
+Road condition impact (lighting, traffic congestion)
+
+Visualizations:
+
+Line plots, bar graphs, and heatmaps
+
+Accident hotspot visualization using Folium (based on latitude & longitude)
+
+Note: Due to large dataset size (~3.5 GB), use filtered data or a machine with enough memory.
 
 ✅ Status
 Project Completed ✅
 
 🙋‍♂️ Author
-Karthikeyan Anoop
+  Karthikeyan Anoop
 
